@@ -10,6 +10,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script>
+		<script type="text/javascript">
+		  VK.init({
+			apiId: 6096090,
+			onlyWidgets: true
+		  });
+		</script>
 	</head>
 	<body class="subpage">
 
@@ -43,6 +50,16 @@
 					<p>Смотри видео, как попасть на этот сервер:</p>
 					<p><a href="https://youtu.be/-ZpV1vSUBaA" class="button special icon fa-youtube-play">Версия от ЮЗИКа</a> <a href="https://youtu.be/-GffQzPiwrE" class="button icon fa-youtube-play">Версия от TwitchMan2200</a></p>
 					<p>Ну на этом всё, всем удачи. =D</p>
+					<div id="vk_like"></div>
+					<script type="text/javascript">
+					VK.Widgets.Like("vk_like", {type: "button", height: 30});
+					</script>
+					<br/>
+					<div id="vk_comments"></div>
+					<script type="text/javascript">
+					VK.Widgets.Comments("vk_comments", {limit: 10, width: "610", attach: "*"});
+					</script>
+					<br/>
 					<div class="flex flex-2">
 						<article>
 							<div class="image fit">
